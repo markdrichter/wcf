@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DBFE06AC-9970-4B08-9C63-1DA5BABCDDDD}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+		WcfServiceLibrary.vsmdi = WcfServiceLibrary.vsmdi
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{0287627E-C1C2-43E3-9526-00AD96B0EA2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfServiceLibrary", "Service\WcfServiceLibrary.csproj", "{06EE3712-6725-4BE1-BC07-03D52539D730}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = WcfServiceLibrary.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0287627E-C1C2-43E3-9526-00AD96B0EA2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0287627E-C1C2-43E3-9526-00AD96B0EA2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0287627E-C1C2-43E3-9526-00AD96B0EA2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0287627E-C1C2-43E3-9526-00AD96B0EA2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06EE3712-6725-4BE1-BC07-03D52539D730}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06EE3712-6725-4BE1-BC07-03D52539D730}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06EE3712-6725-4BE1-BC07-03D52539D730}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06EE3712-6725-4BE1-BC07-03D52539D730}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
