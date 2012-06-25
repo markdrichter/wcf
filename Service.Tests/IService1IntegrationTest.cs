@@ -1,7 +1,7 @@
 ﻿using WcfServiceLibrary;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Tests
+namespace Service.Tests
 {
     
     
