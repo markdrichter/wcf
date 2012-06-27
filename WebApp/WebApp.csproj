@@ -25,7 +25,11 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ExcludeGeneratedDebugSymbol>true</ExcludeGeneratedDebugSymbol>
-    <DesktopBuildPackageLocation>..\bin\Debug\Package\WebApp.zip</DesktopBuildPackageLocation>
+    <DesktopBuildPackageLocation>
+    </DesktopBuildPackageLocation>
+    <DeployIisAppPath />
+    <PackageAsSingleFile>false</PackageAsSingleFile>
+    <PublishDatabases>false</PublishDatabases>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -35,6 +39,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <DesktopBuildPackageLocation>..\bin\Release\Package\WebApp.zip</DesktopBuildPackageLocation>
+    <DeployIisAppPath>%25TARGET%25</DeployIisAppPath>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
