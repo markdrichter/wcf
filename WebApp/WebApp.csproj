@@ -39,7 +39,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <DesktopBuildPackageLocation>..\bin\Release\Package\WebApp.zip</DesktopBuildPackageLocation>
-    <DeployIisAppPath>%25TARGET%25</DeployIisAppPath>
+    <DeployIisAppPath>laguna/webapp</DeployIisAppPath>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
