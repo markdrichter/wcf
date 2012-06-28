@@ -80,5 +80,12 @@ namespace Service.Tests
             var actual = target.GetDataUsingDataContract(composite);
             Assert.AreEqual(expected.StringValue, actual.StringValue);
         }
+
+
+        [TestMethod]
+        public void FailOnPurpose()
+        {
+            Assert.Fail();
+        }
     }
 }
