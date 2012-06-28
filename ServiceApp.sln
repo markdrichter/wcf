@@ -20,6 +20,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp.Tests", "WebApp.Test
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service.Tests", "Service.Tests\Service.Tests.csproj", "{0287627E-C1C2-43E3-9526-00AD96B0EA2F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp.Smoke.Test", "WebApp.Smoke.Test\WebApp.Smoke.Test.csproj", "{0A17B057-246B-4297-99B7-3CC88E40C402}"
+EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = ServiceApp1.vsmdi
@@ -45,6 +47,10 @@ Global
 		{0287627E-C1C2-43E3-9526-00AD96B0EA2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0287627E-C1C2-43E3-9526-00AD96B0EA2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0287627E-C1C2-43E3-9526-00AD96B0EA2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A17B057-246B-4297-99B7-3CC88E40C402}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A17B057-246B-4297-99B7-3CC88E40C402}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A17B057-246B-4297-99B7-3CC88E40C402}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A17B057-246B-4297-99B7-3CC88E40C402}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -27,7 +27,7 @@
     <ExcludeGeneratedDebugSymbol>true</ExcludeGeneratedDebugSymbol>
     <DesktopBuildPackageLocation>
     </DesktopBuildPackageLocation>
-    <DeployIisAppPath />
+    <DeployIisAppPath>Default Web Site/webapp</DeployIisAppPath>
     <PackageAsSingleFile>false</PackageAsSingleFile>
     <PublishDatabases>false</PublishDatabases>
   </PropertyGroup>
@@ -39,7 +39,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <DesktopBuildPackageLocation>..\bin\Release\Package\WebApp.zip</DesktopBuildPackageLocation>
-    <DeployIisAppPath>laguna/webapp</DeployIisAppPath>
+    <DeployIisAppPath>production</DeployIisAppPath>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
