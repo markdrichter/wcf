@@ -81,11 +81,13 @@ namespace Service.Tests
             Assert.AreEqual(expected.StringValue, actual.StringValue);
         }
 
-
-        [TestMethod]
-        public void FailOnPurpose()
-        {
-            Assert.Fail();
-        }
+        ///// <summary>
+        ///// Use this to force a failure
+        ///// </summary>
+        //[TestMethod]
+        //public void FailOnPurpose()
+        //{
+        //    Assert.Fail();
+        //}
     }
 }
