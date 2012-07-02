@@ -76,12 +76,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="GenericTest1.GenericTest">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="OrderedTest1.orderedtest">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Include="packages.config" />
     <None Include="UIMap.uitest" />
   </ItemGroup>

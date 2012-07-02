@@ -8,7 +8,7 @@
   </TestList>
   <TestList name="Smoke" id="6a5a827e-0111-4644-a690-d1924ef3b87c" parentListId="8c43106b-9dc1-4907-a29f-aa66a61bf5b6">
     <TestLinks>
-      <TestLink id="5b795d34-8fc7-6e92-4fcb-3946487e29fb" name="CodedUITestMethod1" storage="webapp.smoke.test\bin\release\webapp.smoke.test.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="7bbad0da-3664-a2f9-2c57-157f198a1616" name="TestMethod1" storage="webapp.smoke.test\bin\release\webapp.smoke.test.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
     </TestLinks>
   </TestList>
   <TestList name="Lists of Tests" id="8c43106b-9dc1-4907-a29f-aa66a61bf5b6">
