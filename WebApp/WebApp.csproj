@@ -122,6 +122,11 @@
     <Content Include="Views\Shared\LogOnUserControl.ascx" />
     <Content Include="Views\Shared\Site.Master" />
     <Content Include="Views\Web.config" />
+    <Content Include="WebApp.SetParameters.Integration.xml" />
+    <Content Include="WebApp.SetParameters.Production.xml" />
+    <Content Include="WebApp.SetParameters.Staging.xml">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Service\Service.csproj">
