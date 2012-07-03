@@ -15,7 +15,7 @@ namespace WebApp.Smoke.Test
         public void TestMethod1()
         {
             var web = new WebClient();
-            var stream = web.OpenRead("http://" + Environment.GetEnvironmentVariable("DESTINATION"));
+            var stream = web.OpenRead("http://" + Environment.GetEnvironmentVariable("APPNAME"));
             var result = new StreamReader(stream).ReadToEnd();
             Assert.IsTrue(result.Contains("ASP.NET MVC Website") && result.Contains("Home"));
         }
