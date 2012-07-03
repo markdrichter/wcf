@@ -87,11 +87,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\AdventureWorksLT2008.mdf" />
+    <Content Include="App_Data\AdventureWorksLT2008_log.LDF">
+      <DependentUpon>AdventureWorksLT2008.mdf</DependentUpon>
+    </Content>
     <Content Include="App_Data\ASPNETDB.MDF" />
     <Content Include="App_Data\aspnetdb_log.ldf">
       <DependentUpon>ASPNETDB.MDF</DependentUpon>
     </Content>
+    <Content Include="database.sql" />
     <Content Include="Global.asax" />
+    <Content Include="rollback.sql" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
