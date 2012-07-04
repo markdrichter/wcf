@@ -58,14 +58,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Service\Service.csproj">
-      <Project>{06EE3712-6725-4BE1-BC07-03D52539D730}</Project>
-      <Name>Service</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="packages.config" />
     <None Include="test.bat" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Component-1\Component-1.csproj">
+      <Project>{06EE3712-6725-4BE1-BC07-03D52539D730}</Project>
+      <Name>Component-1</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
