@@ -62,9 +62,9 @@
     <None Include="test.bat" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Component-1\Component-1.csproj">
+    <ProjectReference Include="..\service\Service.csproj">
       <Project>{06EE3712-6725-4BE1-BC07-03D52539D730}</Project>
-      <Name>Component-1</Name>
+      <Name>Service</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
