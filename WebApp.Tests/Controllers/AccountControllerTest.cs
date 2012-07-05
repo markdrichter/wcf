@@ -15,11 +15,6 @@ namespace WebApp.Tests.Controllers
     [TestClass]
     public class AccountControllerTest
     {
-        [TestMethod]
-        public void FailForDemo()
-        {
-            Assert.Fail();
-        }
 
         [TestMethod]
         public void ChangePassword_Get_ReturnsView()
@@ -43,7 +38,7 @@ namespace WebApp.Tests.Controllers
             ChangePasswordModel model = new ChangePasswordModel()
             {
                 OldPassword = "goodOldPassword",
-                NewPassword = "goodNewPassword",
+                NewPassword = "goodNePassword",
                 ConfirmPassword = "goodNewPassword"
             };
 
