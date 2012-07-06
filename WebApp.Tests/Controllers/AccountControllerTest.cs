@@ -38,7 +38,7 @@ namespace WebApp.Tests.Controllers
             ChangePasswordModel model = new ChangePasswordModel()
             {
                 OldPassword = "goodOldPassword",
-                NewPassword = "goodNePassword",
+                NewPassword = "goodNewPassword",
                 ConfirmPassword = "goodNewPassword"
             };
 
