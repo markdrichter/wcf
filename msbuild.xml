@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" InitialTargets="ValidateSolutionConfiguration;ValidateToolsVersions;ValidateProjects" DefaultTargets="Build">
+  <PropertyGroup>
+    <FrameworkSDKRoot>C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\</FrameworkSDKRoot>
+    <SDK40ToolsPath>C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\NETFX 4.0 Tools\</SDK40ToolsPath>
+    <SDK35ToolsPath>C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\</SDK35ToolsPath>
+    <VCTargetsPath>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\</VCTargetsPath>
+    <MSBuildToolsRoot>C:\Windows\Microsoft.NET\Framework\</MSBuildToolsRoot>
+    <MSBuildRuntimeVersion>4.0.30319</MSBuildRuntimeVersion>
+    <MSBuildToolsPath32>C:\Windows\Microsoft.NET\Framework\v4.0.30319\</MSBuildToolsPath32>
+    <VisualStudioVersion>10.0</VisualStudioVersion>
+    <Configuration>Debug</Configuration>
+    <Platform>Any CPU</Platform>
+    <AspNetConfiguration>Debug</AspNetConfiguration>
+    <SolutionDir>C:\Users\mark\src\ServiceApp\</SolutionDir>
+    <SolutionExt>.sln</SolutionExt>
+    <SolutionFileName>serviceapp.sln</SolutionFileName>
+    <SolutionName>serviceapp</SolutionName>
+    <SolutionPath>C:\Users\mark\src\ServiceApp\serviceapp.sln</SolutionPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <CurrentSolutionConfigurationContents>
+      <SolutionConfiguration xmlns="">
+  <ProjectConfiguration Project="{C411865C-5B04-4C5B-96D9-4D8889A76B2F}" AbsolutePath="C:\Users\mark\src\ServiceApp\WebApp\WebApp.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{1A5B0097-095D-4778-A32C-F9F6B8BF2F49}" AbsolutePath="C:\Users\mark\src\ServiceApp\WebApp.Tests\WebApp.Tests.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{0287627E-C1C2-43E3-9526-00AD96B0EA2F}" AbsolutePath="C:\Users\mark\src\ServiceApp\Service.Tests\Service.Tests.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{0A17B057-246B-4297-99B7-3CC88E40C402}" AbsolutePath="C:\Users\mark\src\ServiceApp\WebApp.Smoke.Test\WebApp.Smoke.Test.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{06EE3712-6725-4BE1-BC07-03D52539D730}" AbsolutePath="C:\Users\mark\src\ServiceApp\service\Service.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+</SolutionConfiguration>
+    </CurrentSolutionConfigurationContents>
+  </PropertyGroup>
+  <ItemDefinitionGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\mark\src\ServiceApp\WebApp\WebApp.csproj">
+      <ToolsVersion>
+      </ToolsVersion>
+      <SkipNonexistentProjects>False</SkipNonexistentProjects>
+      <AdditionalProperties>Configuration=Debug; Platform=AnyCPU; VisualStudioVersion=10.0</AdditionalProperties>
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\mark\src\ServiceApp\WebApp.Tests\WebApp.Tests.csproj">
+      <ToolsVersion>
+      </ToolsVersion>
+      <SkipNonexistentProjects>False</SkipNonexistentProjects>
+      <AdditionalProperties>Configuration=Debug; Platform=AnyCPU; VisualStudioVersion=10.0</AdditionalProperties>
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\mark\src\ServiceApp\Service.Tests\Service.Tests.csproj">
+      <ToolsVersion>
+      </ToolsVersion>
+      <SkipNonexistentProjects>False</SkipNonexistentProjects>
+      <AdditionalProperties>Configuration=Debug; Platform=AnyCPU; VisualStudioVersion=10.0</AdditionalProperties>
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\mark\src\ServiceApp\WebApp.Smoke.Test\WebApp.Smoke.Test.csproj">
+      <ToolsVersion>
+      </ToolsVersion>
+      <SkipNonexistentProjects>False</SkipNonexistentProjects>
+      <AdditionalProperties>Configuration=Debug; Platform=AnyCPU; VisualStudioVersion=10.0</AdditionalProperties>
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\mark\src\ServiceApp\service\Service.csproj">
+      <ToolsVersion>
+      </ToolsVersion>
+      <SkipNonexistentProjects>False</SkipNonexistentProjects>
+      <AdditionalProperties>Configuration=Debug; Platform=AnyCPU; VisualStudioVersion=10.0</AdditionalProperties>
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectReference>
+  </ItemGroup>
+  <Target Name="ValidateSolutionConfiguration">
+    <Error Condition="('$(CurrentSolutionConfigurationContents)' == '') and ('$(SkipInvalidConfigurations)' != 'true')" Text="The specified solution configuration &quot;$(Configuration)|$(Platform)&quot; is invalid. Please specify a valid solution configuration using the Configuration and Platform properties (e.g. MSBuild.exe Solution.sln /p:Configuration=Debug /p:Platform=&quot;Any CPU&quot;) or leave those properties blank to use the default solution configuration." Code="MSB4126" HelpKeyword="MSBuild.SolutionInvalidSolutionConfiguration" />
+    <Warning Condition="('$(CurrentSolutionConfigurationContents)' == '') and ('$(SkipInvalidConfigurations)' == 'true')" Text="The specified solution configuration &quot;$(Configuration)|$(Platform)&quot; is invalid. Please specify a valid solution configuration using the Configuration and Platform properties (e.g. MSBuild.exe Solution.sln /p:Configuration=Debug /p:Platform=&quot;Any CPU&quot;) or leave those properties blank to use the default solution configuration." Code="MSB4126" HelpKeyword="MSBuild.SolutionInvalidSolutionConfiguration" />
+    <Message Condition="'$(CurrentSolutionConfigurationContents)' != ''" Text="Building solution configuration &quot;$(Configuration)|$(Platform)&quot;." />
+  </Target>
+  <Target Name="ValidateToolsVersions">
+    <Error Condition="'$(MSBuildToolsVersion)' == '2.0' and ('$(ProjectToolsVersion)' != '2.0' and '$(ProjectToolsVersion)' != '')" Text="The tools version &quot;$(MSBuildToolsVersion)&quot; of the solution does not support building projects with a different tools version." Code="MSB4149" HelpKeyword="MSBuild.SolutionToolsVersionDoesNotSupportProjectToolsVersion" />
+  </Target>
+  <Target Name="ValidateProjects" />
+  <Target Name="Build" Outputs="@(CollectedBuildOutput)">
+    <MSBuild Projects="@(ProjectReference)" BuildInParallel="True" Properties="BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" SkipNonexistentProjects="%(ProjectReference.SkipNonexistentProjects)">
+      <Output TaskParameter="TargetOutputs" ItemName="CollectedBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="Clean">
+    <MSBuild Projects="@(ProjectReference-&gt;Reverse())" Targets="Clean" BuildInParallel="True" Properties="BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" SkipNonexistentProjects="%(ProjectReference.SkipNonexistentProjects)" />
+  </Target>
+  <Target Name="Rebuild" Outputs="@(CollectedBuildOutput)">
+    <MSBuild Projects="@(ProjectReference)" Targets="Rebuild" BuildInParallel="True" Properties="BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" SkipNonexistentProjects="%(ProjectReference.SkipNonexistentProjects)">
+      <Output TaskParameter="TargetOutputs" ItemName="CollectedBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="Publish">
+    <MSBuild Projects="@(ProjectReference)" Targets="Publish" BuildInParallel="True" Properties="BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" SkipNonexistentProjects="%(ProjectReference.SkipNonexistentProjects)" />
+  </Target>
+  <Target Name="WebApp" Outputs="@(WebAppBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\mark\src\ServiceApp\WebApp\WebApp.csproj'" Projects="@(ProjectReference)" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="WebAppBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="WebApp:Clean">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\mark\src\ServiceApp\WebApp\WebApp.csproj'" Projects="@(ProjectReference)" Targets="Clean" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="WebApp:Rebuild" Outputs="@(WebAppBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\mark\src\ServiceApp\WebApp\WebApp.csproj'" Projects="@(ProjectReference)" Targets="Rebuild" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="WebAppBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="WebApp:Publish">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\mark\src\ServiceApp\WebApp\WebApp.csproj'" Projects="@(ProjectReference)" Targets="Publish" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="WebApp_Tests" Outputs="@(WebApp_TestsBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\mark\src\ServiceApp\WebApp.Tests\WebApp.Tests.csproj'" Projects="@(ProjectReference)" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="WebApp_TestsBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="WebApp_Tests:Clean">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\mark\src\ServiceApp\WebApp.Tests\WebApp.Tests.csproj'" Projects="@(ProjectReference)" Targets="Clean" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="WebApp_Tests:Rebuild" Outputs="@(WebApp_TestsBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\mark\src\ServiceApp\WebApp.Tests\WebApp.Tests.csproj'" Projects="@(ProjectReference)" Targets="Rebuild" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="WebApp_TestsBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="WebApp_Tests:Publish">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\mark\src\ServiceApp\WebApp.Tests\WebApp.Tests.csproj'" Projects="@(ProjectReference)" Targets="Publish" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="Service_Tests" Outputs="@(Service_TestsBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\mark\src\ServiceApp\Service.Tests\Service.Tests.csproj'" Projects="@(ProjectReference)" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="Service_TestsBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="Service_Tests:Clean">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\mark\src\ServiceApp\Service.Tests\Service.Tests.csproj'" Projects="@(ProjectReference)" Targets="Clean" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="Service_Tests:Rebuild" Outputs="@(Service_TestsBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\mark\src\ServiceApp\Service.Tests\Service.Tests.csproj'" Projects="@(ProjectReference)" Targets="Rebuild" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="Service_TestsBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="Service_Tests:Publish">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\mark\src\ServiceApp\Service.Tests\Service.Tests.csproj'" Projects="@(ProjectReference)" Targets="Publish" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="WebApp_Smoke_Test" Outputs="@(WebApp_Smoke_TestBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\mark\src\ServiceApp\WebApp.Smoke.Test\WebApp.Smoke.Test.csproj'" Projects="@(ProjectReference)" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="WebApp_Smoke_TestBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="WebApp_Smoke_Test:Clean">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\mark\src\ServiceApp\WebApp.Smoke.Test\WebApp.Smoke.Test.csproj'" Projects="@(ProjectReference)" Targets="Clean" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="WebApp_Smoke_Test:Rebuild" Outputs="@(WebApp_Smoke_TestBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\mark\src\ServiceApp\WebApp.Smoke.Test\WebApp.Smoke.Test.csproj'" Projects="@(ProjectReference)" Targets="Rebuild" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="WebApp_Smoke_TestBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="WebApp_Smoke_Test:Publish">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\mark\src\ServiceApp\WebApp.Smoke.Test\WebApp.Smoke.Test.csproj'" Projects="@(ProjectReference)" Targets="Publish" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="Service" Outputs="@(ServiceBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\mark\src\ServiceApp\service\Service.csproj'" Projects="@(ProjectReference)" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="ServiceBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="Service:Clean">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\mark\src\ServiceApp\service\Service.csproj'" Projects="@(ProjectReference)" Targets="Clean" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="Service:Rebuild" Outputs="@(ServiceBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\mark\src\ServiceApp\service\Service.csproj'" Projects="@(ProjectReference)" Targets="Rebuild" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="ServiceBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="Service:Publish">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\mark\src\ServiceApp\service\Service.csproj'" Projects="@(ProjectReference)" Targets="Publish" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+</Project>

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" InitialTargets="ValidateSolutionConfiguration;ValidateToolsVersions;ValidateProjects">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportBefore\*" Condition="'$(ImportByWildcardBeforeSolution)' != 'false' and exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportBefore')" />
+  <Import Project="C:\Users\mark\src\ServiceApp\before.serviceapp.sln.targets" Condition="exists('C:\Users\mark\src\ServiceApp\before.serviceapp.sln.targets')" />
+  <PropertyGroup Condition=" '$(Configuration)' == '' ">
+    <Configuration>Debug</Configuration>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == '' ">
+    <Platform>Any CPU</Platform>
+  </PropertyGroup>
+  <PropertyGroup Condition=" ('$(AspNetConfiguration)' == '') ">
+    <AspNetConfiguration>$(Configuration)</AspNetConfiguration>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SolutionDir>C:\Users\mark\src\ServiceApp\</SolutionDir>
+    <SolutionExt>.sln</SolutionExt>
+    <SolutionFileName>serviceapp.sln</SolutionFileName>
+    <SolutionName>serviceapp</SolutionName>
+    <SolutionPath>C:\Users\mark\src\ServiceApp\serviceapp.sln</SolutionPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetFrameworkVersion Condition="'$(TargetFrameworkVersion)' == '' and '$(MSBuildToolsVersion)' == '2.0'">v2.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion Condition="'$(TargetFrameworkVersion)' == '' and ('$(MSBuildToolsVersion)' == '3.5' or '$(MSBuildToolsVersion)' == '3.0')">v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion Condition="'$(TargetFrameworkVersion)' == '' and '$(MSBuildToolsVersion)' == '4.0'">v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" ('$(Configuration)' == 'Debug') and ('$(Platform)' == 'Any CPU') ">
+    <CurrentSolutionConfigurationContents>
+      <SolutionConfiguration xmlns="">
+  <ProjectConfiguration Project="{C411865C-5B04-4C5B-96D9-4D8889A76B2F}" AbsolutePath="C:\Users\mark\src\ServiceApp\WebApp\WebApp.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{1A5B0097-095D-4778-A32C-F9F6B8BF2F49}" AbsolutePath="C:\Users\mark\src\ServiceApp\WebApp.Tests\WebApp.Tests.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{0287627E-C1C2-43E3-9526-00AD96B0EA2F}" AbsolutePath="C:\Users\mark\src\ServiceApp\Service.Tests\Service.Tests.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{0A17B057-246B-4297-99B7-3CC88E40C402}" AbsolutePath="C:\Users\mark\src\ServiceApp\WebApp.Smoke.Test\WebApp.Smoke.Test.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{06EE3712-6725-4BE1-BC07-03D52539D730}" AbsolutePath="C:\Users\mark\src\ServiceApp\service\Service.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+</SolutionConfiguration>
+    </CurrentSolutionConfigurationContents>
+  </PropertyGroup>
+  <PropertyGroup Condition=" ('$(Configuration)' == 'Release') and ('$(Platform)' == 'Any CPU') ">
+    <CurrentSolutionConfigurationContents>
+      <SolutionConfiguration xmlns="">
+  <ProjectConfiguration Project="{C411865C-5B04-4C5B-96D9-4D8889A76B2F}" AbsolutePath="C:\Users\mark\src\ServiceApp\WebApp\WebApp.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{1A5B0097-095D-4778-A32C-F9F6B8BF2F49}" AbsolutePath="C:\Users\mark\src\ServiceApp\WebApp.Tests\WebApp.Tests.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{0287627E-C1C2-43E3-9526-00AD96B0EA2F}" AbsolutePath="C:\Users\mark\src\ServiceApp\Service.Tests\Service.Tests.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{0A17B057-246B-4297-99B7-3CC88E40C402}" AbsolutePath="C:\Users\mark\src\ServiceApp\WebApp.Smoke.Test\WebApp.Smoke.Test.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{06EE3712-6725-4BE1-BC07-03D52539D730}" AbsolutePath="C:\Users\mark\src\ServiceApp\service\Service.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+</SolutionConfiguration>
+    </CurrentSolutionConfigurationContents>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportAfter\*" Condition="'$(ImportByWildcardBeforeSolution)' != 'false' and exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportAfter')" />
+  <Import Project="C:\Users\mark\src\ServiceApp\after.serviceapp.sln.targets" Condition="exists('C:\Users\mark\src\ServiceApp\after.serviceapp.sln.targets')" />
+  <Target Name="Build" />
+  <Target Name="Rebuild" />
+  <Target Name="Clean" />
+  <Target Name="Publish" />
+</Project>
