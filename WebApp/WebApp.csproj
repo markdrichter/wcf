@@ -24,12 +24,14 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <ExcludeGeneratedDebugSymbol>true</ExcludeGeneratedDebugSymbol>
+    <ExcludeGeneratedDebugSymbol>false</ExcludeGeneratedDebugSymbol>
     <DesktopBuildPackageLocation>
     </DesktopBuildPackageLocation>
-    <DeployIisAppPath>Default Web Site/webapp</DeployIisAppPath>
+    <DeployIisAppPath>
+    </DeployIisAppPath>
     <PackageAsSingleFile>false</PackageAsSingleFile>
     <PublishDatabases>false</PublishDatabases>
+    <ExcludeApp_Data>true</ExcludeApp_Data>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -39,11 +41,14 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <DesktopBuildPackageLocation>..\bin\Release\Package\WebApp.zip</DesktopBuildPackageLocation>
-    <DeployIisAppPath>production</DeployIisAppPath>
+    <DeployIisAppPath>
+    </DeployIisAppPath>
     <PublishDatabaseSettings>
       <Objects>
       </Objects>
     </PublishDatabaseSettings>
+    <PublishDatabases>false</PublishDatabases>
+    <ExcludeApp_Data>true</ExcludeApp_Data>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="log4net">
@@ -90,9 +95,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="database.sql" />
+    <Content Include="deploy.sql" />
     <Content Include="Global.asax" />
     <Content Include="rollback.sql" />
+    <Content Include="smoke.sql" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
