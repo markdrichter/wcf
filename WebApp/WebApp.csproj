@@ -95,6 +95,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="check_before_deploy.sql" />
     <Content Include="deploy.sql" />
     <Content Include="Global.asax" />
     <Content Include="rollback.sql" />
