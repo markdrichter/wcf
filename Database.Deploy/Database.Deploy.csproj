@@ -58,6 +58,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="app.staging.config" />
+    <None Include="app.production.config" />
+    <None Include="app.integration.config" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="DatabaseDeploy.resx">
