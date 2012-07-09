@@ -6,11 +6,11 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{D6932A45-9CB4-431B-AD72-60528FC0266D}</ProjectGuid>
+    <ProjectGuid>{94CF113D-BF55-4009-A7D5-9B56ED1A2CA8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Database.Tests</RootNamespace>
-    <AssemblyName>Database.Tests</AssemblyName>
+    <RootNamespace>Database.Tests.Smoke</RootNamespace>
+    <AssemblyName>Database.Tests.Smoke</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -51,7 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DatabaseSetup.cs" />
-    <Compile Include="DatabaseUnitTest.cs">
+    <Compile Include="DatabaseDeploy.cs">
       <SubType>Designer</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -60,8 +60,8 @@
     <None Include="app.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="DatabaseUnitTest.resx">
-      <DependentUpon>DatabaseUnitTest.cs</DependentUpon>
+    <EmbeddedResource Include="DatabaseDeploy.resx">
+      <DependentUpon>DatabaseDeploy.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
