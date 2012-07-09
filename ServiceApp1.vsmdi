@@ -6,6 +6,11 @@
       <TestLink id="792cfbbe-b96c-609d-de4e-98f248a9890c" name="GetDataUsingDataContractIntegrationTest" storage="service.tests\bin\release\service.tests.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
     </TestLinks>
   </TestList>
+  <TestList name="Database" id="2adac59f-3f98-47fc-9fcd-a03f87f2ea92" parentListId="8c43106b-9dc1-4907-a29f-aa66a61bf5b6">
+    <TestLinks>
+      <TestLink id="c01a0fec-6f69-5489-8978-c95495c4c49f" name="VerifyMyBankIAvailable" storage="database.tests\bin\release\database.tests.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    </TestLinks>
+  </TestList>
   <TestList name="Smoke" id="6a5a827e-0111-4644-a690-d1924ef3b87c" parentListId="8c43106b-9dc1-4907-a29f-aa66a61bf5b6">
     <TestLinks>
       <TestLink id="7bbad0da-3664-a2f9-2c57-157f198a1616" name="TestMethod1" storage="webapp.smoke.test\bin\release\webapp.smoke.test.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
