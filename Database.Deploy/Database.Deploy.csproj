@@ -9,8 +9,8 @@
     <ProjectGuid>{94CF113D-BF55-4009-A7D5-9B56ED1A2CA8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Database.Tests.Smoke</RootNamespace>
-    <AssemblyName>Database.Tests.Smoke</AssemblyName>
+    <RootNamespace>Database.Deploy</RootNamespace>
+    <AssemblyName>Database.Deploy</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>

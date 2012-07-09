@@ -30,9 +30,9 @@ namespace Database.Tests.Smoke
         }
 
         [TestMethod()]
-        public void VerifyAccountTypeExists()
+        public void Deploy()
         {
-            DatabaseTestActions testActions = this.VerifyAccountTypeExistsData;
+            DatabaseTestActions testActions = this.DeployData;
             // Execute the pre-test script
             // 
             System.Diagnostics.Trace.WriteLineIf((testActions.PretestAction != null), "Executing pre-test script...");
@@ -55,33 +55,27 @@ namespace Database.Tests.Smoke
         /// </summary>
         private void InitializeComponent()
         {
-            Microsoft.Data.Schema.UnitTesting.DatabaseTestAction VerifyAccountTypeExists_TestAction;
+            Microsoft.Data.Schema.UnitTesting.DatabaseTestAction Deploy_TestAction;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DatabaseDeploy));
-            Microsoft.Data.Schema.UnitTesting.DatabaseTestAction VerifyAccountTypeExists_PretestAction;
+            Microsoft.Data.Schema.UnitTesting.DatabaseTestAction Deploy_PretestAction;
             Microsoft.Data.Schema.UnitTesting.Conditions.ScalarValueCondition LookForDatabase;
-            Microsoft.Data.Schema.UnitTesting.DatabaseTestAction VerifyAccountTypeExists_PosttestAction;
+            Microsoft.Data.Schema.UnitTesting.DatabaseTestAction Deploy_PosttestAction;
             Microsoft.Data.Schema.UnitTesting.Conditions.EmptyResultSetCondition emptyResultSetCondition1;
-            this.VerifyAccountTypeExistsData = new Microsoft.Data.Schema.UnitTesting.DatabaseTestActions();
-            VerifyAccountTypeExists_TestAction = new Microsoft.Data.Schema.UnitTesting.DatabaseTestAction();
-            VerifyAccountTypeExists_PretestAction = new Microsoft.Data.Schema.UnitTesting.DatabaseTestAction();
+            this.DeployData = new Microsoft.Data.Schema.UnitTesting.DatabaseTestActions();
+            Deploy_TestAction = new Microsoft.Data.Schema.UnitTesting.DatabaseTestAction();
+            Deploy_PretestAction = new Microsoft.Data.Schema.UnitTesting.DatabaseTestAction();
             LookForDatabase = new Microsoft.Data.Schema.UnitTesting.Conditions.ScalarValueCondition();
-            VerifyAccountTypeExists_PosttestAction = new Microsoft.Data.Schema.UnitTesting.DatabaseTestAction();
+            Deploy_PosttestAction = new Microsoft.Data.Schema.UnitTesting.DatabaseTestAction();
             emptyResultSetCondition1 = new Microsoft.Data.Schema.UnitTesting.Conditions.EmptyResultSetCondition();
             // 
-            // VerifyAccountTypeExists_TestAction
+            // Deploy_TestAction
             // 
-            resources.ApplyResources(VerifyAccountTypeExists_TestAction, "VerifyAccountTypeExists_TestAction");
+            resources.ApplyResources(Deploy_TestAction, "Deploy_TestAction");
             // 
-            // VerifyAccountTypeExistsData
+            // Deploy_PretestAction
             // 
-            this.VerifyAccountTypeExistsData.PosttestAction = VerifyAccountTypeExists_PosttestAction;
-            this.VerifyAccountTypeExistsData.PretestAction = VerifyAccountTypeExists_PretestAction;
-            this.VerifyAccountTypeExistsData.TestAction = VerifyAccountTypeExists_TestAction;
-            // 
-            // VerifyAccountTypeExists_PretestAction
-            // 
-            VerifyAccountTypeExists_PretestAction.Conditions.Add(LookForDatabase);
-            resources.ApplyResources(VerifyAccountTypeExists_PretestAction, "VerifyAccountTypeExists_PretestAction");
+            Deploy_PretestAction.Conditions.Add(LookForDatabase);
+            resources.ApplyResources(Deploy_PretestAction, "Deploy_PretestAction");
             // 
             // LookForDatabase
             // 
@@ -93,16 +87,22 @@ namespace Database.Tests.Smoke
             LookForDatabase.ResultSet = 1;
             LookForDatabase.RowNumber = 1;
             // 
-            // VerifyAccountTypeExists_PosttestAction
+            // Deploy_PosttestAction
             // 
-            VerifyAccountTypeExists_PosttestAction.Conditions.Add(emptyResultSetCondition1);
-            resources.ApplyResources(VerifyAccountTypeExists_PosttestAction, "VerifyAccountTypeExists_PosttestAction");
+            Deploy_PosttestAction.Conditions.Add(emptyResultSetCondition1);
+            resources.ApplyResources(Deploy_PosttestAction, "Deploy_PosttestAction");
             // 
             // emptyResultSetCondition1
             // 
             emptyResultSetCondition1.Enabled = true;
             emptyResultSetCondition1.Name = "emptyResultSetCondition1";
             emptyResultSetCondition1.ResultSet = 1;
+            // 
+            // DeployData
+            // 
+            this.DeployData.PosttestAction = Deploy_PosttestAction;
+            this.DeployData.PretestAction = Deploy_PretestAction;
+            this.DeployData.TestAction = Deploy_TestAction;
         }
 
         #endregion
@@ -122,6 +122,6 @@ namespace Database.Tests.Smoke
         //
         #endregion
 
-        private DatabaseTestActions VerifyAccountTypeExistsData;
+        private DatabaseTestActions DeployData;
     }
 }
