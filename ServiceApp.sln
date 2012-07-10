@@ -24,11 +24,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service.Tests", "Service.Te
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp.Smoke.Test", "WebApp.Smoke.Test\WebApp.Smoke.Test.csproj", "{0A17B057-246B-4297-99B7-3CC88E40C402}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{4A86BD93-3A9C-4C56-8C1C-120170E97DCC}"
-	ProjectSection(SolutionItems) = preProject
-		.nuget\packages.config = .nuget\packages.config
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{06EE3712-6725-4BE1-BC07-03D52539D730}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database.Deploy", "Database.Deploy\Database.Deploy.csproj", "{94CF113D-BF55-4009-A7D5-9B56ED1A2CA8}"
