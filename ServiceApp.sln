@@ -23,9 +23,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database.Deploy", "Database.Deploy\Database.Deploy.csproj", "{94CF113D-BF55-4009-A7D5-9B56ED1A2CA8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Component-2", "Component-2\Component-2.csproj", "{2210B55F-F11C-4028-98DA-41595E9B2237}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Component-2.Test", "Component-2.Test\Component-2.Test.csproj", "{D828DDD7-6093-4FF8-A552-D1C47CD32193}"
+EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 7
+		SccNumberOfProjects = 9
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = http://markrtfs.dyndns.org:8080/tfs/demo
 		SccLocalPath0 = .
@@ -47,6 +51,12 @@ Global
 		SccProjectUniqueName6 = Database.Deploy\\Database.Deploy.csproj
 		SccProjectName6 = Database.Deploy
 		SccLocalPath6 = Database.Deploy
+		SccProjectUniqueName7 = Component-2\\Component-2.csproj
+		SccProjectName7 = Component-2
+		SccLocalPath7 = Component-2
+		SccProjectUniqueName8 = Component-2.Test\\Component-2.Test.csproj
+		SccProjectName8 = Component-2.Test
+		SccLocalPath8 = Component-2.Test
 	EndGlobalSection
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = ServiceApp1.vsmdi
@@ -80,6 +90,14 @@ Global
 		{94CF113D-BF55-4009-A7D5-9B56ED1A2CA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94CF113D-BF55-4009-A7D5-9B56ED1A2CA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94CF113D-BF55-4009-A7D5-9B56ED1A2CA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2210B55F-F11C-4028-98DA-41595E9B2237}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2210B55F-F11C-4028-98DA-41595E9B2237}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2210B55F-F11C-4028-98DA-41595E9B2237}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2210B55F-F11C-4028-98DA-41595E9B2237}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D828DDD7-6093-4FF8-A552-D1C47CD32193}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D828DDD7-6093-4FF8-A552-D1C47CD32193}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D828DDD7-6093-4FF8-A552-D1C47CD32193}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D828DDD7-6093-4FF8-A552-D1C47CD32193}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
