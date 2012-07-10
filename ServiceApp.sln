@@ -7,12 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		build.bat = build.bat
 		Local.testsettings = Local.testsettings
 		msbuild.xml = msbuild.xml
-		prep_Integration.sql = prep_Integration.sql
-		prep_Production.sql = prep_Production.sql
 		prep_Staging.sql = prep_Staging.sql
-		README.md = README.md
-		ServiceApp1.vsmdi = ServiceApp1.vsmdi
-		Tools\test.bat = Tools\test.bat
 		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
 	EndProjectSection
 EndProject
@@ -29,6 +24,30 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database.Deploy", "Database.Deploy\Database.Deploy.csproj", "{94CF113D-BF55-4009-A7D5-9B56ED1A2CA8}"
 EndProject
 Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://markrtfs.dyndns.org:8080/tfs/demo
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = WebApp\\WebApp.csproj
+		SccProjectName1 = WebApp
+		SccLocalPath1 = WebApp
+		SccProjectUniqueName2 = WebApp.Tests\\WebApp.Tests.csproj
+		SccProjectName2 = WebApp.Tests
+		SccLocalPath2 = WebApp.Tests
+		SccProjectUniqueName3 = Service.Tests\\Service.Tests.csproj
+		SccProjectName3 = Service.Tests
+		SccLocalPath3 = Service.Tests
+		SccProjectUniqueName4 = WebApp.Smoke.Test\\WebApp.Smoke.Test.csproj
+		SccProjectName4 = WebApp.Smoke.Test
+		SccLocalPath4 = WebApp.Smoke.Test
+		SccProjectUniqueName5 = Service\\Service.csproj
+		SccProjectName5 = Service
+		SccLocalPath5 = Service
+		SccProjectUniqueName6 = Database.Deploy\\Database.Deploy.csproj
+		SccProjectName6 = Database.Deploy
+		SccLocalPath6 = Database.Deploy
+	EndGlobalSection
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = ServiceApp1.vsmdi
 	EndGlobalSection
