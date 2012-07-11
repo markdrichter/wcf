@@ -5,6 +5,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
 		build.bat = build.bat
+		goconfig.xml = goconfig.xml
 		Local.testsettings = Local.testsettings
 		msbuild.xml = msbuild.xml
 		prep_Staging.sql = prep_Staging.sql
@@ -117,6 +118,7 @@ Global
 		{94CF113D-BF55-4009-A7D5-9B56ED1A2CA8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{94CF113D-BF55-4009-A7D5-9B56ED1A2CA8}.Service|Any CPU.ActiveCfg = Service|Any CPU
 		{94CF113D-BF55-4009-A7D5-9B56ED1A2CA8}.Website|Any CPU.ActiveCfg = Website|Any CPU
+		{94CF113D-BF55-4009-A7D5-9B56ED1A2CA8}.Website|Any CPU.Build.0 = Website|Any CPU
 		{2210B55F-F11C-4028-98DA-41595E9B2237}.Component-2|Any CPU.ActiveCfg = Component-2|Any CPU
 		{2210B55F-F11C-4028-98DA-41595E9B2237}.Component-2|Any CPU.Build.0 = Component-2|Any CPU
 		{2210B55F-F11C-4028-98DA-41595E9B2237}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
