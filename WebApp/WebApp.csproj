@@ -141,11 +141,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="check_before_deploy.sql" />
-    <Content Include="deploy.sql" />
     <Content Include="Global.asax" />
-    <Content Include="rollback.sql" />
-    <Content Include="smoke.sql" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
