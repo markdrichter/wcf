@@ -7,6 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp.Smoke.Test", "WebApp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp.Tests", "WebApp.Tests\WebApp.Tests.csproj", "{1A5B0097-095D-4778-A32C-F9F6B8BF2F49}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C77EE4C3-B9F8-4A20-B892-8AA2225EA681}"
+	ProjectSection(SolutionItems) = preProject
+		TestSettings.testsettings = TestSettings.testsettings
+		Web.vsmdi = Web.vsmdi
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
 		SccNumberOfProjects = 4
@@ -22,6 +28,9 @@ Global
 		SccProjectUniqueName3 = WebApp.Tests\\WebApp.Tests.csproj
 		SccProjectName3 = WebApp.Tests
 		SccLocalPath3 = WebApp.Tests
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Web.vsmdi
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Component-2|Any CPU = Component-2|Any CPU
