@@ -6,3 +6,5 @@ _ReSharper*/
 *.suo
 # mstest test results
 TestResults
+Web/lib/Component-2.dll
+Web/lib/WcfServiceLibrary.dll
