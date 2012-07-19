@@ -1,0 +1,26 @@
+﻿CREATE TABLE [dbo].[vw_aspnet_MembershipUsers] (
+    [UserId]                                 UNIQUEIDENTIFIER NOT NULL,
+    [PasswordFormat]                         INT              NOT NULL,
+    [MobilePIN]                              NVARCHAR (16)    NULL,
+    [Email]                                  NVARCHAR (256)   NULL,
+    [LoweredEmail]                           NVARCHAR (256)   NULL,
+    [PasswordQuestion]                       NVARCHAR (256)   NULL,
+    [PasswordAnswer]                         NVARCHAR (128)   NULL,
+    [IsApproved]                             BIT              NOT NULL,
+    [IsLockedOut]                            BIT              NOT NULL,
+    [CreateDate]                             DATETIME         NOT NULL,
+    [LastLoginDate]                          DATETIME         NOT NULL,
+    [LastPasswordChangedDate]                DATETIME         NOT NULL,
+    [LastLockoutDate]                        DATETIME         NOT NULL,
+    [FailedPasswordAttemptCount]             INT              NOT NULL,
+    [FailedPasswordAttemptWindowStart]       DATETIME         NOT NULL,
+    [FailedPasswordAnswerAttemptCount]       INT              NOT NULL,
+    [FailedPasswordAnswerAttemptWindowStart] DATETIME         NOT NULL,
+    [Comment]                                NTEXT            NULL,
+    [ApplicationId]                          UNIQUEIDENTIFIER NOT NULL,
+    [UserName]                               NVARCHAR (256)   NOT NULL,
+    [MobileAlias]                            NVARCHAR (16)    NULL,
+    [IsAnonymous]                            BIT              NOT NULL,
+    [LastActivityDate]                       DATETIME         NOT NULL
+);
+
