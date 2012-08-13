@@ -150,17 +150,11 @@
     <None Include="app.Staging.config" />
     <None Include="app.Production.config" />
     <None Include="app.Integration.config" />
-    <None Include="app.Build.config" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="DatabaseDeploy.resx">
       <DependentUpon>DatabaseDeploy.cs</DependentUpon>
     </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="prep.sql" />
-    <Content Include="prep_Production.sql" />
-    <Content Include="prep_Staging.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

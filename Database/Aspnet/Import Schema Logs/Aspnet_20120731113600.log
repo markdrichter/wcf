@@ -1,0 +1,10 @@
+7/31/2012 4:36:00 PM	This log contains information about the import schema operation into project 'Aspnet' on computer 'FRODO' by user 'mark'.
+7/31/2012 4:36:00 PM	Creating database project...
+7/31/2012 4:36:00 PM	Done
+7/31/2012 4:36:01 PM	Import of database schema has started.
+7/31/2012 4:36:03 PM	Adding all files to the project...
+7/31/2012 4:36:07 PM	Finished adding all files to the project.
+7/31/2012 4:36:07 PM	Done
+7/31/2012 4:36:07 PM	Import of database schema is complete.
+7/31/2012 4:36:07 PM	A summary of the import operation was saved to the log file C:\Users\mark\src\ServiceApp\Database\Aspnet\Import Schema Logs\Aspnet_20120731113600.log.
+7/31/2012 4:36:07 PM	Click Finish to continue...

@@ -1,0 +1,1 @@
+﻿WCF service created using the Visual Studio project wizard.

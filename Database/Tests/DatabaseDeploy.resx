@@ -129,8 +129,8 @@ In the lower pane, you can add test conditions that verify
 whether the results of your SQL statements match what 
 you expect.
 */
-use aspnetdb
-Select count(*) from Users</value>
+use Aspnetdb
+Select count(*) from UserNamesView</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

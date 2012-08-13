@@ -7,7 +7,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Microsoft.Data.Schema.UnitTesting;
 using Microsoft.Data.Schema.UnitTesting.Conditions;
 
-namespace Database.Tests.Smoke
+namespace Database.Tests
 {
     [TestClass()]
     public class DatabaseDeploy : DatabaseTestClass
@@ -39,27 +39,27 @@ namespace Database.Tests.Smoke
         {
             Microsoft.Data.Schema.UnitTesting.DatabaseTestAction CheckUsersView_TestAction;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DatabaseDeploy));
-            Microsoft.Data.Schema.UnitTesting.Conditions.NotEmptyResultSetCondition notEmptyResultSetCondition1;
+            Microsoft.Data.Schema.UnitTesting.Conditions.NotEmptyResultSetCondition notEmptyResultSetCondition;
             this.CheckUsersViewData = new Microsoft.Data.Schema.UnitTesting.DatabaseTestActions();
             CheckUsersView_TestAction = new Microsoft.Data.Schema.UnitTesting.DatabaseTestAction();
-            notEmptyResultSetCondition1 = new Microsoft.Data.Schema.UnitTesting.Conditions.NotEmptyResultSetCondition();
+            notEmptyResultSetCondition = new Microsoft.Data.Schema.UnitTesting.Conditions.NotEmptyResultSetCondition();
+            // 
+            // CheckUsersView_TestAction
+            // 
+            CheckUsersView_TestAction.Conditions.Add(notEmptyResultSetCondition);
+            resources.ApplyResources(CheckUsersView_TestAction, "CheckUsersView_TestAction");
+            // 
+            // notEmptyResultSetCondition
+            // 
+            notEmptyResultSetCondition.Enabled = true;
+            notEmptyResultSetCondition.Name = "notEmptyResultSetCondition";
+            notEmptyResultSetCondition.ResultSet = 1;
             // 
             // CheckUsersViewData
             // 
             this.CheckUsersViewData.PosttestAction = null;
             this.CheckUsersViewData.PretestAction = null;
             this.CheckUsersViewData.TestAction = CheckUsersView_TestAction;
-            // 
-            // CheckUsersView_TestAction
-            // 
-            CheckUsersView_TestAction.Conditions.Add(notEmptyResultSetCondition1);
-            resources.ApplyResources(CheckUsersView_TestAction, "CheckUsersView_TestAction");
-            // 
-            // notEmptyResultSetCondition1
-            // 
-            notEmptyResultSetCondition1.Enabled = true;
-            notEmptyResultSetCondition1.Name = "notEmptyResultSetCondition1";
-            notEmptyResultSetCondition1.ResultSet = 1;
         }
 
         #endregion

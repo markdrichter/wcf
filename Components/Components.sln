@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Component-2", "Component-2\Component-2.csproj", "{2210B55F-F11C-4028-98DA-41595E9B2237}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Component-2.Test", "Component-2.Test\Component-2.Test.csproj", "{D828DDD7-6093-4FF8-A552-D1C47CD32193}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "service\Service.csproj", "{06EE3712-6725-4BE1-BC07-03D52539D730}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service.Tests", "Service.Tests\Service.Tests.csproj", "{0287627E-C1C2-43E3-9526-00AD96B0EA2F}"
@@ -15,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		TestSettings.testsettings = TestSettings.testsettings
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Component-2.Tests", "Component-2.Tests\Component-2.Tests.csproj", "{8B59C64F-7C44-470A-9E8D-DB39917AF279}"
+EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
 		SccNumberOfProjects = 5
@@ -24,15 +24,15 @@ Global
 		SccProjectUniqueName1 = Component-2\\Component-2.csproj
 		SccProjectName1 = Component-2
 		SccLocalPath1 = Component-2
-		SccProjectUniqueName2 = Component-2.Test\\Component-2.Test.csproj
-		SccProjectName2 = Component-2.Test
-		SccLocalPath2 = Component-2.Test
-		SccProjectUniqueName3 = service\\Service.csproj
-		SccProjectName3 = service
-		SccLocalPath3 = service
-		SccProjectUniqueName4 = Service.Tests\\Service.Tests.csproj
-		SccProjectName4 = Service.Tests
-		SccLocalPath4 = Service.Tests
+		SccProjectUniqueName2 = service\\Service.csproj
+		SccProjectName2 = service
+		SccLocalPath2 = service
+		SccProjectUniqueName3 = Service.Tests\\Service.Tests.csproj
+		SccProjectName3 = Service.Tests
+		SccLocalPath3 = Service.Tests
+		SccProjectUniqueName4 = Component-2.Tests\\Component-2.Tests.csproj
+		SccProjectName4 = Component-2.Tests
+		SccLocalPath4 = Component-2.Tests
 	EndGlobalSection
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = Components.vsmdi
@@ -54,15 +54,6 @@ Global
 		{2210B55F-F11C-4028-98DA-41595E9B2237}.Service|Any CPU.ActiveCfg = Service|Any CPU
 		{2210B55F-F11C-4028-98DA-41595E9B2237}.Website|Any CPU.ActiveCfg = Website|Any CPU
 		{2210B55F-F11C-4028-98DA-41595E9B2237}.Website|Any CPU.Build.0 = Website|Any CPU
-		{D828DDD7-6093-4FF8-A552-D1C47CD32193}.Component-2|Any CPU.ActiveCfg = Component-2|Any CPU
-		{D828DDD7-6093-4FF8-A552-D1C47CD32193}.Component-2|Any CPU.Build.0 = Component-2|Any CPU
-		{D828DDD7-6093-4FF8-A552-D1C47CD32193}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D828DDD7-6093-4FF8-A552-D1C47CD32193}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D828DDD7-6093-4FF8-A552-D1C47CD32193}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D828DDD7-6093-4FF8-A552-D1C47CD32193}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D828DDD7-6093-4FF8-A552-D1C47CD32193}.Service|Any CPU.ActiveCfg = Service|Any CPU
-		{D828DDD7-6093-4FF8-A552-D1C47CD32193}.Website|Any CPU.ActiveCfg = Website|Any CPU
-		{D828DDD7-6093-4FF8-A552-D1C47CD32193}.Website|Any CPU.Build.0 = Website|Any CPU
 		{06EE3712-6725-4BE1-BC07-03D52539D730}.Component-2|Any CPU.ActiveCfg = Component-2|Any CPU
 		{06EE3712-6725-4BE1-BC07-03D52539D730}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{06EE3712-6725-4BE1-BC07-03D52539D730}.Debug|Any CPU.Build.0 = Debug|Any CPU
@@ -81,6 +72,16 @@ Global
 		{0287627E-C1C2-43E3-9526-00AD96B0EA2F}.Service|Any CPU.Build.0 = Service|Any CPU
 		{0287627E-C1C2-43E3-9526-00AD96B0EA2F}.Website|Any CPU.ActiveCfg = Website|Any CPU
 		{0287627E-C1C2-43E3-9526-00AD96B0EA2F}.Website|Any CPU.Build.0 = Website|Any CPU
+		{8B59C64F-7C44-470A-9E8D-DB39917AF279}.Component-2|Any CPU.ActiveCfg = Component-2|Any CPU
+		{8B59C64F-7C44-470A-9E8D-DB39917AF279}.Component-2|Any CPU.Build.0 = Component-2|Any CPU
+		{8B59C64F-7C44-470A-9E8D-DB39917AF279}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B59C64F-7C44-470A-9E8D-DB39917AF279}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B59C64F-7C44-470A-9E8D-DB39917AF279}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B59C64F-7C44-470A-9E8D-DB39917AF279}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B59C64F-7C44-470A-9E8D-DB39917AF279}.Service|Any CPU.ActiveCfg = Service|Any CPU
+		{8B59C64F-7C44-470A-9E8D-DB39917AF279}.Service|Any CPU.Build.0 = Service|Any CPU
+		{8B59C64F-7C44-470A-9E8D-DB39917AF279}.Website|Any CPU.ActiveCfg = Website|Any CPU
+		{8B59C64F-7C44-470A-9E8D-DB39917AF279}.Website|Any CPU.Build.0 = Website|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

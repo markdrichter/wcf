@@ -1,0 +1,1 @@
+﻿Class library created using the Visual Studio project wizard.

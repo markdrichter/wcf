@@ -6,7 +6,7 @@ using System.Configuration;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Microsoft.Data.Schema.UnitTesting;
 
-namespace Database.Tests.Smoke
+namespace Database.Tests
 {
     [TestClass()]
     public class DatabaseSetup
