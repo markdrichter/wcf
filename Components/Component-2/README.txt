@@ -1,1 +1,1 @@
-﻿Class library created using the Visual Studio project wizard.
+﻿Class library created using the Visual Studio project wizard. This is a change.
